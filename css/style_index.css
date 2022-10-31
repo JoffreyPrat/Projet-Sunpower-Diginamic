@@ -582,6 +582,7 @@ body a{
         border-radius: 50px;
         border: none;
         padding: 10px 20px;
+        margin-bottom: 3%;
     }
 
         .section_contact button a{
@@ -610,7 +611,7 @@ body a{
     }
 
         .entr_titre{
-            padding-bottom : 1rem
+            padding : 0.5rem;
         }
 
     .section_contact_synd{
@@ -632,7 +633,7 @@ body a{
     }
 
         .synd_titre{
-            padding-bottom : 1rem;
+            padding: 0.5rem;
         }
 
     .section_contact_part{
@@ -650,8 +651,10 @@ body a{
     }
 
     .part_titre{
-        padding-bottom : 1rem;
+        padding: 0.5rem;
     }
+
+
 /* --- Fin Nous contacter --- */
 
 

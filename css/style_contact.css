@@ -88,7 +88,7 @@ body a{
 
 /* --- nav bar --- */
    
-@media (min-width: 1150px){
+@media (min-width: 1239px){
 
     #closeBtn {
         display: none;
@@ -140,26 +140,26 @@ body a{
         margin-top: 2%;
     }
 
-    .bouton_icon1:hover {
+    #bouton_icon1:hover {
         min-width: 35%;
         transition: 0.8s;
         cursor: pointer;
     }
 
-    .bouton_icon2:hover {
+    #bouton_icon2:hover {
         min-width: 35%;
         transition: 0.8s;
         cursor: pointer;
     }
 
-    .bouton_icon3:hover {
+    #bouton_icon3:hover {
         min-width: 35%;
         transition: 0.8s;
         cursor: pointer;
     }
     
-    .button_envoyer a:hover{
-        font-size: 14px;
+    .button_envoyer:hover{
+        font-size: 16px;
         transition: 0.5s;
     }
     
@@ -168,9 +168,17 @@ body a{
     }
 }
 
+
+@media screen and (max-width : 450px) {
+    
+    h1{
+        display : none;
+    }
+}
+
 /* --- burger menu --- */
 
-@media (max-width: 1150px) {
+@media (max-width: 1239px) {
     .sidenav {
         font-size: 100px;
         height: 100%;
@@ -287,7 +295,7 @@ body a{
     padding: 1rem;       
 }
 
-.bouton_icon1{
+#bouton_icon1{
     background-color: #ffffff;
     border: none;
     border: 1px solid #757575;
@@ -300,7 +308,7 @@ body a{
     align-items: center;
 }
 
-.bouton_icon2{
+#bouton_icon2{
     background-color: #ffffff;
     border: none;
     border: 1px solid #757575;
@@ -316,7 +324,7 @@ body a{
     min-width: 50%;    
 }
 
-.bouton_icon3{
+#bouton_icon3{
     background-color: #ffffff;
     border: none;
     border: 1px solid #757575;
@@ -331,7 +339,10 @@ body a{
     margin-top: 6%;
 }
 
-  
+#choisissez_votre_situation_titre {
+    font-size: 90%;
+    color:#107207;
+}
 
 /*---Fin sélection Cilent---/*
 
@@ -354,25 +365,38 @@ body a{
     align-items: center;
     justify-content: center;
     border: 1px solid;
-    border-radius: 50px;
+    border-radius: 20px;
     margin-top: 4rem;
     margin-bottom: 6rem;
     width: 70%;
 }
 
-.formulaire h3{
-    margin: 1.5rem 0;
+#formulaire{
+    margin-left: 2%;
 }
 
-.formulaire input{
+#formulaire h3{
+    margin: 1rem 0;
+}
+
+#formulaire input{
     border : none;
     font-size : 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
     margin-right: 5%;
 }
 
+.error{
+    font-family: "Quicksand";
+    font-size: 12px;
+    color : red;
+}
 
+.invisible{
+    display: none;
+}
 
 .img_form img{
     width: 70%;
@@ -391,36 +415,35 @@ input::file-selector-button {
     cursor: pointer;
 }
 
-.button_envoyer {
+.button_envoyer{
     background-color: #FDC50D;
     border-radius: 50px;
     border: none;
     padding: 10px 20px;
+    cursor: pointer;
+    color: white;
 }
 
-.button_envoyer a{
-    text-align: center;
-    color: #ffffff;
-    font-size: 11px;
-    font-style: normal;
+.formulaire_container p{
+    margin-top : 0.5rem;
 }
-
 
 /*---Début Formulaire particulier---*/
 
 .formulaire_contact_part{
     display: flex; 
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     margin: 1rem 1rem;
     padding-right: 10%;
-    
+    margin-left: 5%;
 }
 
 #document_part {
-    margin-bottom:0px;
+    margin-bottom:0px !important;
+    margin-top: 0px !important;
     width: 100%;
-    border: none;
+    border: none !important;
 }
 
 #projet_part {
@@ -430,16 +453,15 @@ input::file-selector-button {
     border-radius: 15px;
     resize: none;
     padding-left: 1%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 .dossier_part {
     display: flex;
     width: auto;
+    margin-top: 1rem;
 }
-
-
-
 
 /*---Fin Formulaire particulier---*/
 
@@ -462,18 +484,22 @@ input::file-selector-button {
     border-radius: 15px;
     resize: none;
     padding-left: 1%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 .dossier_entr{
     display: flex;
     width: auto;
+    margin-top: 1rem;
 }
 
+
 #document_entr {
-    margin-bottom:0px;
+    margin-bottom:0px !important;
+    margin-top: 0px !important;
     width: 100%;
-    border: none;
+    border: none !important;
 }
 
 /*---Fin Formulaire entreprise---*/
@@ -498,18 +524,22 @@ input::file-selector-button {
     border-radius: 15px;
     resize: none;
     padding-left: 1%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 .dossier_synd{
     display: flex;
     width: auto;
+    margin-top: 1rem;
 }
 
+
 #document_synd {
-    margin-bottom:0px;
+    margin-bottom:0px !important;
+    margin-top: 0px !important;
     width: 100%;
-    border: none;
+    border: none !important;
 }
 
 
@@ -594,15 +624,52 @@ input::file-selector-button {
 
 
 @media screen and (max-width : 1200px) {
+    
     .img_form{
-        display:none
+        display:none;
     }
     
+    .formulaire_contact_part,.formulaire_contact_entr,.formulaire_contact_synd  {
+        padding-right : 0%;
+        margin : 2rem 0;
 }
 
-@media screen and (max-width : 450px) {
+    #formulaire {
+        width : 100%;
+        margin-left : 0%;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    #formulaire {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width : 697px){
     
-    h1{
-        display : none
+    .select_container h2{
+        font-size : 16px;
+    }
+    
+}    
+@media screen and (max-width : 600px){
+    .text_form {
+        width: 90%;
+    }
+}
+@media screen and (max-width : 530px){
+    .formulaire_container{
+        width : 80%;
+    }
+}
+@media screen and (max-width : 462px){
+    
+    .select_container h2{
+        font-size : 12px;
+    }
+    .formulaire_container{
+        width : 90%;
     }
 }
