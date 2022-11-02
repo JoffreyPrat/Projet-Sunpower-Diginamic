@@ -226,8 +226,6 @@ body a {
 .article_imgleft_par {
     width: 100%;
     padding-left: 2rem;
-
-
 }
 
 .ligne {
@@ -258,8 +256,7 @@ body a {
 
 .article_imgright_par {
     width: 100%;
-    padding-right: 2rem;
-
+    padding-bottom: 2rem;
 }
 
 /* --- Fin Articles--- */
@@ -671,6 +668,18 @@ body a {
 
     .article_imgright img {
         width: 90%;
+    }
+
+    .article_imgright_par {
+        width: 90%;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .article_imgleft_par {
+        width: 90%;
+        padding: 1rem 2rem;
+        text-align: center;
     }
 }
 
