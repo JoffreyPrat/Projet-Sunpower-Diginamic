@@ -21,21 +21,21 @@ function closeNav() {
 
 // Début page "nous contacter"
 
-function displayPartForm(){
+function displayPartForm() {
   console.log('called')
   document.getElementById('formulaire_entr').style.display = 'none';
   document.getElementById('formulaire_synd').style.display = 'none';
   document.getElementById('formulaire_part').style.display = 'inherit';
 }
 
-function displayEntrForm(){
+function displayEntrForm() {
   console.log('called')
   document.getElementById('formulaire_entr').style.display = 'inherit';
   document.getElementById('formulaire_synd').style.display = 'none';
   document.getElementById('formulaire_part').style.display = 'none';
 }
 
-function displaySyndForm(){
+function displaySyndForm() {
   console.log('called')
   document.getElementById('formulaire_entr').style.display = 'none';
   document.getElementById('formulaire_synd').style.display = 'inherit';
@@ -84,7 +84,7 @@ formPart.addEventListener('submit', function (e) {
     prenomPart.nextElementSibling.classList.remove('invisible')
   }
 
-  if (telPartValue.length < 1) {
+  if (telPartValue.length < 1 || isNaN(Number(telPartValue))) {
     telPart.nextElementSibling.classList.remove('invisible')
   }
 
@@ -100,7 +100,7 @@ formPart.addEventListener('submit', function (e) {
     villePart.nextElementSibling.classList.remove('invisible')
   }
 
-  if (codePostalPartValue.length < 1) {
+  if (codePostalPartValue.length < 1 || isNaN(Number(codePostalPartValue))) {
     codePostalPart.nextElementSibling.classList.remove('invisible')
   }
 
@@ -108,7 +108,7 @@ formPart.addEventListener('submit', function (e) {
     descriptionPart.nextElementSibling.classList.remove('invisible')
   }
 
-  if (nomPartValue.length > 1 && prenomPartValue.length > 1 && telPartValue.length > 1 && emailPartValue.length > 1 && adressePartValue.length > 1 && villePartValue.length > 1 && codePostalPartValue.length > 1 && descriptionPartValue.length > 1) {
+  if (nomPartValue.length > 1 && prenomPartValue.length > 1 && (telPartValue.length > 1 && !isNaN(Number(telPartValue))) && emailPartValue.length > 1 && adressePartValue.length > 1 && villePartValue.length > 1 && (codePostalPartValue.length > 1 && !isNaN(Number(codePostalPartValue))) && descriptionPartValue.length > 1) {
     window.alert("Votre formulaire a bien été envoyé")
     formPart.reset()
   }
@@ -161,7 +161,7 @@ formEntr.addEventListener('submit', function (e) {
     prenomEntr.nextElementSibling.classList.remove('invisible')
   }
 
-  if (telEntrValue.length < 1) {
+  if (telEntrValue.length < 1 || isNaN(Number(telEntrValue))) {
     telEntr.nextElementSibling.classList.remove('invisible')
   }
 
@@ -177,7 +177,7 @@ formEntr.addEventListener('submit', function (e) {
     villeEntr.nextElementSibling.classList.remove('invisible')
   }
 
-  if (codePostalEntrValue.length < 1) {
+  if (codePostalEntrValue.length < 1 || isNaN(Number(codePostalEntrValue))) {
     codePostalEntr.nextElementSibling.classList.remove('invisible')
   }
 
@@ -189,7 +189,7 @@ formEntr.addEventListener('submit', function (e) {
     descriptionEntr.nextElementSibling.classList.remove('invisible')
   }
 
-  if (nomEntrValue.length > 1 && prenomEntrValue.length > 1 && telEntrValue.length > 1 && emailEntrValue.length > 1 && adresseEntrValue.length > 1 && villeEntrValue.length > 1 && codePostalEntrValue.length > 1 && descriptionEntrValue.length > 1) {
+  if (nomEntrValue.length > 1 && prenomEntrValue.length > 1 && (telEntrValue.length > 1 && !isNaN(Number(telEntrValue))) && emailEntrValue.length > 1 && adresseEntrValue.length > 1 && villeEntrValue.length > 1 && (codePostalEntrValue.length > 1 && !isNaN(Number(codePostalEntrValue))) && raisonEntrValue.length > 1 && descriptionEntrValue.length > 1) {
     window.alert("Votre formulaire a bien été envoyé")
     formEntr.reset()
   }
@@ -242,7 +242,7 @@ formSynd.addEventListener('submit', function (e) {
     prenomSynd.nextElementSibling.classList.remove('invisible')
   }
 
-  if (telSyndValue.length < 1) {
+  if (telSyndValue.length < 1 || isNaN(Number(telSyndValue))) {
     telSynd.nextElementSibling.classList.remove('invisible')
   }
 
@@ -258,7 +258,7 @@ formSynd.addEventListener('submit', function (e) {
     villeSynd.nextElementSibling.classList.remove('invisible')
   }
 
-  if (codePostalSyndValue.length < 1) {
+  if (codePostalSyndValue.length < 1 || isNaN(Number(codePostalSyndValue))) {
     codePostalSynd.nextElementSibling.classList.remove('invisible')
   }
 
@@ -270,7 +270,7 @@ formSynd.addEventListener('submit', function (e) {
     descriptionSynd.nextElementSibling.classList.remove('invisible')
   }
 
-  if (nomSyndValue.length > 1 && prenomSyndValue.length > 1 && telSyndValue.length > 1 && emailSyndValue.length > 1 && adresseSyndValue.length > 1 && villeSyndValue.length > 1 && codePostalSyndValue.length > 1 && descriptionSyndValue.length > 1) {
+  if (nomSyndValue.length > 1 && prenomSyndValue.length > 1 && (telSyndValue.length > 1 && !isNaN(Number(telSyndValue))) && emailSyndValue.length > 1 && adresseSyndValue.length > 1 && villeSyndValue.length > 1 && (codePostalSyndValue.length > 1 && !isNaN(Number(codePostalSyndValue))) && raisonSyndValue.length > 1 && descriptionSyndValue.length > 1) {
     window.alert("Votre formulaire a bien été envoyé")
     formSynd.reset()
   }

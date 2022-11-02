@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: "Quicksand";
-    src: url("/font/Quicksand-Regular.ttf") format("truetype"),
-         url("/font/Quicksand-Bold.ttf") format("truetype"),
-         url("/font/Quicksand-Light.ttf") format("truetype");
+    src: url("../font/Quicksand-Regular.ttf") format("truetype"),
+        url("../font/Quicksand-Bold.ttf") format("truetype"),
+        url("../font/Quicksand-Light.ttf") format("truetype");
 }
 
 /* --- Debut Header --- */
@@ -17,24 +17,9 @@ body h1 {
     color: #0C9B18;
     font-family: "Quicksand";
     font-weight: bold;
-    max-width : 100%;
-    height : auto;
+    max-width: 100%;
+    height: auto;
 }
-
-/* --- media titre et supr du text logo --- */
-
-@media screen and (max-width : 450px) {
-    
-    h1{
-        display : none
-    }
-
-    .titre_2{
-        font-size: 20px ;
-    }
-}
-
-/* --- fin media titre et supr du text logo --- */
 
 body h2 {
     font-size: 27px;
@@ -63,7 +48,7 @@ body p {
     font-family: "Quicksand";
 }
 
-body a{
+body a {
     text-decoration: none;
     font-size: 7px;
     font-weight: bold;
@@ -82,28 +67,292 @@ body a{
 
 /* --- Logo --- */
 
-    .menu_logo {
-        display: flex;
-        align-items: center;
-      
-       
+.menu_logo {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.menu img {
+    width: 10%;
+    margin: 5px 10px 5px 10px;
+
+}
+
+
+.menu h1 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* --- Fin Header --- */
+
+/* --- Début main --- */
+
+
+/*---Début Bannière---*/
+
+.banniere {
+    width: 100%;
+}
+
+.banniere img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titre_2 {
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+}
+
+/*---Fin Bannière---*/
+
+/*---Début cadre Contact---*/
+
+.contact_card {
+    display: flex;
+    border: solid 1px #6ACC1A;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-around;
+    margin: 0 50px 0 50px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.titre_contact_card {
+    font-size: 27px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+
+.contact_card h2 {
+    font-size: 27px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    text-align: center;
+
+}
+
+.contact_titre {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 9rem 1rem 9rem;
+    width: auto;
+}
+
+.cards img {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.card_syndicat {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 40%;
+    padding: 1rem;
+}
+
+.card_particulier {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 40%;
+    padding: 1rem;
+}
+
+/* --- début bouton contact --- */
+
+.contact_button {
+    padding-left: 1rem;
+    justify-content: center;
+}
+
+.contact_button a {
+    text-align: center;
+    color: #ffffff;
+    font-size: 11px;
+    font-style: normal;
+}
+
+.bg_contact {
+    background-color: #6ACC1A;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* --- fin bouton contact --- */
+
+/*---Fin cadre Contact---*/
+
+
+
+/* --- Début Articles--- */
+
+.article_imgleft {
+    display: flex;
+    margin: 0 50px 0 50px;
+    align-items: start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.article_imgleft h4 {
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.article_imgleft img {
+    width: 50%;
+}
+
+.article_imgleft_par {
+    width: 100%;
+    padding-left: 2rem;
+
+
+}
+
+.ligne {
+    border-bottom: 1px solid #6ACC1A;
+    margin: 2rem auto;
+    width: 20%;
+}
+
+.article_imgright {
+    display: flex;
+    margin: 0 50px 0 50px;
+    align-items: start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.article_imgright h4 {
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.article_imgright img {
+    width: 50%;
+
+}
+
+.article_imgright_par {
+    width: 100%;
+    padding-right: 2rem;
+
+}
+
+/* --- Fin Articles--- */
+
+/* --- Fin main --- */
+
+/* --- Début Footer --- */
+
+.footer {
+    background-color: #757575;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* --- Réseaux sociaux --- */
+.footer_suivre {
+    display: flex;
+    align-items: center;
+    margin: 1em 3em 0 3em;
+
+}
+
+.footer_suivre2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+
+}
+
+.footer_contact {
+
+    text-align: right;
+}
+
+.footer_fin {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer_fin {
+    color: #ffffff;
+}
+
+.footer img {
+    width: auto;
+    height: 25px;
+}
+
+
+.mention_fin {
+    border-top: 1px solid #FDC50D;
+    margin: 0 3rem;
+}
+
+
+/* --- Fin Footer --- */
+
+/* Medias */
+
+/* --- media titre et supr du text logo --- */
+
+@media screen and (max-width : 450px) {
+
+    h1 {
+        display: none
     }
 
-    .menu img {
-        width: 10%;
-        margin: 5px 10px 5px 10px;
-
+    .titre_2 {
+        font-size: 20px;
     }
-    
+}
 
-    .menu h1 {
-        text-align: left;
-        margin-left: 50px;
-    }
+/* --- fin media titre et supr du text logo --- */
 
 /* --- nav bar --- */
-   
-@media (min-width: 1150px){
+
+@media (min-width: 1150px) {
 
     #closeBtn {
         display: none;
@@ -111,9 +360,9 @@ body a{
 
     .menu ul {
         display: flex;
-        text-align: center;  
+        text-align: center;
         align-items: center;
-        margin : auto; 
+        margin: auto;
     }
 
     .menu li {
@@ -121,7 +370,7 @@ body a{
         align-items: center;
         justify-content: center;
     }
-    
+
     .border_right_navbar {
         border-right: 1px solid #FDC50D;
     }
@@ -129,7 +378,7 @@ body a{
     .border_left_navbar {
         border-left: 1px solid #FDC50D;
     }
-    
+
     .menu a {
         font-size: 23px;
         color: #000000;
@@ -144,7 +393,7 @@ body a{
         color: #107207;
     }
 
-    #accompagnement{
+    #accompagnement {
         color: #107207;
     }
 
@@ -156,24 +405,24 @@ body a{
 
     /* --- fin du hover sur tous les elements a moins de 1150px de large --- */
 
-    .card_syndicat:hover{
-        width : 45%;
+    .card_syndicat:hover {
+        width: 45%;
         transition: 1.2s;
     }
 
-    .card_particulier:hover{
-        width : 45%;
+    .card_particulier:hover {
+        width: 45%;
         transition: 1.2s;
     }
 
-    .contact_button a:hover{
+    .contact_button a:hover {
         font-size: 15px;
         transition: 0.5s;
     }
 
-    .footer img:hover{
-        height : 40px;
-    }    
+    .footer img:hover {
+        height: 40px;
+    }
 
 }
 
@@ -184,7 +433,7 @@ body a{
         font-size: 100px;
         height: 100%;
         width: 250px;
-        position:fixed;
+        position: fixed;
         z-index: 1;
         top: 0;
         right: -250px;
@@ -208,7 +457,7 @@ body a{
         padding: 0;
         opacity: 1;
     }
-    
+
     .sidenav a {
         padding: 10px 10px 10px 1px;
         text-decoration: none;
@@ -224,20 +473,20 @@ body a{
         text-shadow: 0 0 1.5px #818181;
         transition: 0.2s;
     }
-    
+
     .sidenav.active {
         right: 0;
     }
-    
+
     /* bouton qui ferme */
-    
+
     .sidenav .close {
         position: absolute;
         top: 0;
         right: 25px;
         font-size: 36px;
     }
-    
+
     .burger-icon span {
         display: block;
         width: 35px;
@@ -247,152 +496,68 @@ body a{
         margin: 6px 0;
     }
 }
+
 /* ---  fin burger menu --- */
 
-/* --- Fin Header --- */
 
-/* --- Début main --- */
+/* Lignes de séparation */
 
-
-/*---Début Bannière---*/
-
-.banniere {
-    width: 100%;
+@media screen and (max-width : 1300px) {
+    .ligne {
+        width: 30%;
+    }
 }
 
-.banniere img {
-    max-width: 100%; 
-    height : auto;
+@media screen and (max-width : 847px) {
+    .ligne {
+        width: 40%;
+    }
 }
 
-.titre_2 {
-    text-align: center;
-    margin: 2rem 0 4rem 0;
+@media screen and (max-width : 540px) {
+    .ligne {
+        width: 50%;
+    }
 }
 
-/*---Fin Bannière---*/
-
-/*---Début cadre Contact---*/
-
-.contact_card{
-    display: flex;
-    border: solid 1px #6ACC1A;
-    border-radius: 10px;
-    max-width: 100%;
-    height : auto;
-    justify-content: space-around;
-    margin : 0 50px 0 50px;
-    flex-direction: column;
-    padding: 10px;
+@media screen and (max-width : 400px) {
+    .ligne {
+        width: 60%;
+    }
 }
-
-.titre_contact_card {
-    font-size: 27px;
-    color: #000000;
-    font-weight: bold;
-    font-family: "Quicksand";
-}
-
-.contact_card h2{
-    font-size: 27px;
-    font-weight: bold;
-    padding-bottom : 1rem ;
-    text-align: center;
-    
-}
-
-.contact_titre{
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.cards{
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 9rem 1rem 9rem;
-    width: auto;
-}
-
-.cards img{
-    width: 20%;
-    margin-right : 20px;
-}
-
-.card_syndicat{
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.1) ;
-    border-radius: 10px;
-    width : 40%;
-    padding : 1rem;
-}
-
-.card_particulier{
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.1) ;
-    border-radius: 10px;
-    width : 40%;
-    padding : 1rem;
-}
-
-/* --- début bouton contact --- */
-
-.contact_button {
-    padding-left: 1rem;
-    justify-content: center;
-}
-
-.contact_button a{
-    text-align: center;
-    color: #ffffff;
-    font-size: 11px;
-    font-style: normal;
-}
-
-.bg_contact {
-    background-color: #6ACC1A;
-    border-radius: 50px;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px; 
-}
-
-/* --- fin bouton contact --- */
 
 /* --- media contact --- */
 
 @media (max-width: 900px) {
 
-    .card_syndicat{
+    .card_syndicat {
         display: flex;
         align-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.1) ;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 10px;
-        width : 40%;
-        padding : 1rem;
+        width: 40%;
+        padding: 1rem;
         flex-direction: column;
     }
 
-    .card_particulier{
+    .card_particulier {
         display: flex;
         align-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.1) ;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 10px;
-        width : 40%;
-        padding : 1rem;
+        width: 40%;
+        padding: 1rem;
         flex-direction: column;
     }
 
-    .contact_card h2{
+    .contact_card h2 {
         font-size: 20px;
         font-weight: bold;
-        padding-bottom : 1rem ;
+        padding-bottom: 1rem;
         text-align: center;
     }
 
-    .cards{
+    .cards {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -401,7 +566,7 @@ body a{
         flex-direction: column-reverse;
     }
 
-    .cards img{
+    .cards img {
         align-items: center;
         width: 20%;
         margin: 0;
@@ -411,7 +576,7 @@ body a{
 
 @media (max-width: 800px) {
 
-    .contact_button a{
+    .contact_button a {
         text-align: center;
         color: #ffffff;
         font-size: 6px;
@@ -427,14 +592,14 @@ body a{
         align-items: center;
     }
 
-    .contact_card h2{
+    .contact_card h2 {
         font-size: 20px;
         font-weight: bold;
-        padding-bottom : 1rem ;
+        padding-bottom: 1rem;
         text-align: center;
     }
 
-    .contact_titre{
+    .contact_titre {
         font-size: 10px;
         font-weight: bold;
         text-align: center;
@@ -442,9 +607,9 @@ body a{
 
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
 
-    .cards{
+    .cards {
         display: none;
     }
 
@@ -456,96 +621,31 @@ body a{
     }
 }
 
-@media (max-width: 460px){
-    .contact_titre{
+@media (max-width: 460px) {
+    .contact_titre {
         font-size: 2px;
         font-weight: bold;
         text-align: center;
     }
 }
 
-@media (max-width: 260px){
-    .contact_card h2{
+@media (max-width: 260px) {
+    .contact_card h2 {
         font-size: 12px;
         font-weight: bold;
-        padding-bottom : 1rem ;
+        padding-bottom: 1rem;
         text-align: center;
     }
 }
 
 /* --- fin media contact --- */
 
-/*---Fin cadre Contact---*/
-
-
-
-/* --- Début Articles--- */
-
-.article_imgleft{
-    display: flex;
-    margin : 0 50px 0 50px;
-    align-items: start;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    max-width: 100%;
-    height: auto;
-}
-
-    .article_imgleft h4{
-        padding-bottom: 0.5rem;
-        font-weight: bold;
-    }
-    
-    .article_imgleft img{
-        width : 50%;
-    }
-
-    .article_imgleft_par{
-        width : 100%;
-        padding-left: 2rem;
-        
-
-    }
-
-    .article_ligne{
-        border-bottom: 1px solid #6ACC1A;
-        margin: 2rem auto;
-        width: 20%; 
-    }
-
-.article_imgright{
-    display: flex;
-    margin : 0 50px 0 50px;
-    align-items: start;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    max-width: 100%;
-    height: auto;
-}
-
-    .article_imgright h4{
-        padding-bottom: 0.5rem;
-        font-weight: bold;
-    }
-    
-    .article_imgright img{
-        width : 50%;
-        
-    }
-
-    .article_imgright_par{
-        width : 100%;
-        padding-right: 2rem;
-
-    }
-    
-/* --- Fin Articles--- */
 
 /* --- media article --- */
 
 @media (max-width: 900px) {
 
-    .article_imgleft{
+    .article_imgleft {
         display: flex;
         align-items: center;
         padding-top: 2rem;
@@ -555,11 +655,11 @@ body a{
         flex-direction: column;
     }
 
-    .article_imgleft img{
-        width : 90%;
+    .article_imgleft img {
+        width: 90%;
     }
 
-    .article_imgright{
+    .article_imgright {
         display: flex;
         align-items: center;
         padding-top: 2rem;
@@ -568,78 +668,12 @@ body a{
         height: auto;
         flex-direction: column-reverse;
     }
-    .article_imgright img{
-        width : 90%;
+
+    .article_imgright img {
+        width: 90%;
     }
 }
 
 /* --- fin media article */
 
-/* --- Fin main --- */
-
-/* --- Début Footer --- */
-
-.footer{
-    background-color: #757575;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-/* --- Réseaux sociaux --- */
-.footer_suivre  {
-    display: flex;
-    align-items : center;
-    margin : 1em 3em 0 3em;
-
-}
-
-.footer_suivre2  {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 1%;
-
-}
-
-.footer_contact  {
-    
-    text-align : right;
-}
-
-.footer_fin{
-    text-align: center;
-    margin-top: 1em;
-    font-size: 12px;    
-    font-family: "Quicksand";
-}
- 
-    .footer a {
-        color: #ffffff;
-        text-decoration: none; 
-        margin-left : 15px;
-        font-size: 12px;
-        font-family: "Quicksand";    
-    }
-
-    .footer p {
-        color: #ffffff;
-    }
-
-    .footer_fin {
-        color: #ffffff;
-    }
-    
-.footer img{
-    width : auto;
-    height : 25px;
-}
-
-
-.mention_fin {
-    border-top: 1px solid #FDC50D;
-    margin:0 3rem;
-}
-
-    
-/* --- Fin Footer --- */
+/* Fin médias */

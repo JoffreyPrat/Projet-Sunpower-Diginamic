@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: "Quicksand";
-    src: url("/font/Quicksand-Regular.ttf") format("truetype"),
-         url("/font/Quicksand-Bold.ttf") format("truetype"),
-         url("/font/Quicksand-Light.ttf") format("truetype");
+    src: url("../font/Quicksand-Regular.ttf") format("truetype"),
+        url("../font/Quicksand-Bold.ttf") format("truetype"),
+        url("../font/Quicksand-Light.ttf") format("truetype");
 }
 
 
@@ -18,9 +18,9 @@ body h1 {
     color: #0C9B18;
     font-family: "Quicksand";
     font-weight: bold;
-    max-width : 100%;
-    height : auto;
-    
+    max-width: 100%;
+    height: auto;
+
 }
 
 body h2 {
@@ -51,7 +51,7 @@ body p {
     font-family: "Quicksand";
 }
 
-body a{
+body a {
     text-decoration: none;
     font-size: 7px;
     font-weight: bold;
@@ -70,25 +70,25 @@ body a{
 
 /* --- Logo --- */
 
-    .menu_logo {
-        display: flex;
-        align-items: center;
-    }
+.menu_logo {
+    display: flex;
+    align-items: center;
+}
 
-    .menu img {
-        width: 10%;
-        margin: 5px 10px 5px 10px;
-    }
-    
+.menu img {
+    width: 10%;
+    margin: 5px 10px 5px 10px;
+}
 
-    .menu h1 {
-        text-align: left;
-        margin-left: 50px;
-    }
+
+.menu h1 {
+    text-align: left;
+    margin-left: 50px;
+}
 
 /* --- nav bar --- */
-   
-@media (min-width: 1239px){
+
+@media (min-width: 1239px) {
 
     #closeBtn {
         display: none;
@@ -96,9 +96,9 @@ body a{
 
     .menu ul {
         display: flex;
-        text-align: center;  
+        text-align: center;
         align-items: center;
-        margin : auto; 
+        margin: auto;
     }
 
     .menu li {
@@ -106,7 +106,7 @@ body a{
         align-items: center;
         justify-content: center;
     }
-    
+
     .border_right_navbar {
         border-right: 1px solid #FDC50D;
     }
@@ -114,7 +114,7 @@ body a{
     .border_left_navbar {
         border-left: 1px solid #FDC50D;
     }
-    
+
     .menu a {
         font-size: 23px;
         color: #000000;
@@ -130,7 +130,7 @@ body a{
         transition: 0.2s;
     }
 
-    #contact{
+    #contact {
         color: #107207;
     }
 
@@ -157,22 +157,22 @@ body a{
         transition: 0.8s;
         cursor: pointer;
     }
-    
-    .button_envoyer:hover{
+
+    .button_envoyer:hover {
         font-size: 16px;
         transition: 0.5s;
     }
-    
-    .footer img:hover{
-        height : 40px;
+
+    .footer img:hover {
+        height: 40px;
     }
 }
 
 
 @media screen and (max-width : 450px) {
-    
-    h1{
-        display : none;
+
+    h1 {
+        display: none;
     }
 }
 
@@ -183,7 +183,7 @@ body a{
         font-size: 100px;
         height: 100%;
         width: 250px;
-        position:fixed;
+        position: fixed;
         z-index: 1;
         top: 0;
         right: -250px;
@@ -207,7 +207,7 @@ body a{
         padding: 0;
         opacity: 1;
     }
-    
+
     .sidenav a {
         padding: 10px 10px 10px 1px;
         text-decoration: none;
@@ -222,20 +222,20 @@ body a{
         color: #111111;
         text-shadow: 0 0 1.5px #818181;
     }
-    
+
     .sidenav.active {
         right: 0;
     }
-    
+
     /* bouton qui ferme */
-    
+
     .sidenav .close {
         position: absolute;
         top: 0;
         right: 25px;
         font-size: 36px;
     }
-    
+
     .burger-icon span {
         display: block;
         width: 35px;
@@ -245,6 +245,7 @@ body a{
         margin: 6px 0;
     }
 }
+
 /* ---  fin burger menu --- */
 
 /* --- Fin Header --- */
@@ -260,7 +261,7 @@ body a{
 }
 
 .banniere img {
-    max-width: 100% ; 
+    max-width: 100%;
     object-fit: scale-down;
 }
 
@@ -273,62 +274,62 @@ body a{
 
 /*---Début sélection Cilent---*/
 
-.select_container{
+.select_container {
     width: 95%;
-    margin : auto
+    margin: auto
 }
 
-.select_icon{
+.select_icon {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.select_icon img{
-    width : 50%;
+.select_icon img {
+    width: 50%;
 }
 
-.select_card1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;       
-}
-
-#bouton_icon1{
-    background-color: #ffffff;
-    border: none;
-    border: 1px solid #757575;
-    min-width:30%;
-}
-
-.select_card2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#bouton_icon2{
-    background-color: #ffffff;
-    border: none;
-    border: 1px solid #757575;
-    min-width:30% ;
-    margin: 0 2%;
-}
-
-.select_card3{
+.select_card1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    min-width: 50%;    
 }
 
-#bouton_icon3{
+#bouton_icon1 {
     background-color: #ffffff;
     border: none;
     border: 1px solid #757575;
-    min-width:30% ;
+    min-width: 30%;
+}
+
+.select_card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bouton_icon2 {
+    background-color: #ffffff;
+    border: none;
+    border: 1px solid #757575;
+    min-width: 30%;
+    margin: 0 2%;
+}
+
+.select_card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-width: 50%;
+}
+
+#bouton_icon3 {
+    background-color: #ffffff;
+    border: none;
+    border: 1px solid #757575;
+    min-width: 30%;
 }
 
 .contact_titre {
@@ -341,14 +342,14 @@ body a{
 
 #choisissez_votre_situation_titre {
     font-size: 90%;
-    color:#107207;
+    color: #107207;
 }
 
 /*---Fin sélection Cilent---/*
 
 /*---Début Formulaire---*/
 
-.formulaire_background{
+.formulaire_background {
     margin-top: 5rem;
     background-image: url("../images/background solar panel.webp");
     width: 100%;
@@ -359,7 +360,7 @@ body a{
     justify-content: center;
 }
 
-.formulaire_container{
+.formulaire_container {
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -371,39 +372,39 @@ body a{
     width: 70%;
 }
 
-#formulaire{
+#formulaire {
     margin-left: 2%;
 }
 
-#formulaire h3{
+#formulaire h3 {
     margin: 1rem 0;
 }
 
-#formulaire input{
-    border : none;
-    font-size : 16px;
+#formulaire input {
+    border: none;
+    font-size: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 0.5rem;
     margin-top: 1rem;
     margin-right: 5%;
 }
 
-.error{
+.error {
     font-family: "Quicksand";
     font-size: 12px;
-    color : red;
+    color: red;
 }
 
-.invisible{
+.invisible {
     display: none;
 }
 
-.img_form img{
+.img_form img {
     width: 70%;
     padding: 10%;
     border-left: 1px solid #6ACC1A;
     padding-left: 20%;
-    
+
 }
 
 input::file-selector-button {
@@ -415,7 +416,7 @@ input::file-selector-button {
     cursor: pointer;
 }
 
-.button_envoyer{
+.button_envoyer {
     background-color: #FDC50D;
     border-radius: 50px;
     border: none;
@@ -424,14 +425,14 @@ input::file-selector-button {
     color: white;
 }
 
-.formulaire_container p{
-    margin-top : 0.5rem;
+.formulaire_container p {
+    margin-top: 0.5rem;
 }
 
 /*---Début Formulaire particulier---*/
 
-.formulaire_contact_part{
-    display: flex; 
+.formulaire_contact_part {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem 1rem;
@@ -440,15 +441,15 @@ input::file-selector-button {
 }
 
 #document_part {
-    margin-bottom:0px !important;
+    margin-bottom: 0px !important;
     margin-top: 0px !important;
     width: 100%;
     border: none !important;
 }
 
 #projet_part {
-    border : 1px solid rgba(0, 0, 0, 0.1);
-    min-height: 150px ;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 150px;
     min-width: 30%;
     border-radius: 15px;
     resize: none;
@@ -467,9 +468,9 @@ input::file-selector-button {
 
 /*---Début Formulaire entreprise---*/
 
-.formulaire_contact_entr{
-    display: flex; 
-    flex-direction: column ;
+.formulaire_contact_entr {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
     display: none;
@@ -477,9 +478,9 @@ input::file-selector-button {
 }
 
 
-#projet_entr{
-    border : 1px solid rgba(0, 0, 0, 0.1);
-    min-height: 150px ;
+#projet_entr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 150px;
     min-width: 30%;
     border-radius: 15px;
     resize: none;
@@ -488,7 +489,7 @@ input::file-selector-button {
     margin-top: 1rem;
 }
 
-.dossier_entr{
+.dossier_entr {
     display: flex;
     width: auto;
     margin-top: 1rem;
@@ -496,7 +497,7 @@ input::file-selector-button {
 
 
 #document_entr {
-    margin-bottom:0px !important;
+    margin-bottom: 0px !important;
     margin-top: 0px !important;
     width: 100%;
     border: none !important;
@@ -507,9 +508,9 @@ input::file-selector-button {
 
 /*---Début Formulaire syndicat---*/
 
-.formulaire_contact_synd{
-    display: flex; 
-    flex-direction: column ;
+.formulaire_contact_synd {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
     display: none;
@@ -517,9 +518,9 @@ input::file-selector-button {
 }
 
 
-#projet_synd{
-    border : 1px solid rgba(0, 0, 0, 0.1);
-    min-height: 150px ;
+#projet_synd {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 150px;
     min-width: 30%;
     border-radius: 15px;
     resize: none;
@@ -528,7 +529,7 @@ input::file-selector-button {
     margin-top: 1rem;
 }
 
-.dossier_synd{
+.dossier_synd {
     display: flex;
     width: auto;
     margin-top: 1rem;
@@ -536,7 +537,7 @@ input::file-selector-button {
 
 
 #document_synd {
-    margin-bottom:0px !important;
+    margin-bottom: 0px !important;
     margin-top: 0px !important;
     width: 100%;
     border: none !important;
@@ -557,7 +558,7 @@ input::file-selector-button {
 
 /* --- Début Footer --- */
 
-.footer{
+.footer {
     background-color: #757575;
     display: flex;
     flex-direction: column;
@@ -565,58 +566,58 @@ input::file-selector-button {
 }
 
 /* --- Réseaux sociaux --- */
-.footer_suivre  {
+.footer_suivre {
     display: flex;
-    align-items : center;
-    margin : 1em 3em 0 3em;
+    align-items: center;
+    margin: 1em 3em 0 3em;
 }
 
-.footer_suivre2  {
+.footer_suivre2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 1%;
 }
 
-.footer_contact  {
-    text-align : right;
+.footer_contact {
+    text-align: right;
 }
 
 .footer_fin {
     text-align: center;
     margin-top: 1em;
-    font-size: 12px;    
+    font-size: 12px;
     font-family: "Quicksand";
 }
- 
-    .footer a {
-        color: #ffffff;
-        text-decoration: none; 
-        margin-left : 15px;
-        font-size: 12px;
-        font-family: "Quicksand";    
-    }
 
-    .footer p {
-        color: #ffffff;
-    }
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer p {
+    color: #ffffff;
+}
 
 .footer_fin {
     color: #ffffff;
 }
-    
-    .footer img{
-        width : auto;
-        height : 25px;
-    }
+
+.footer img {
+    width: auto;
+    height: 25px;
+}
 
 
 .mention_fin {
     border-top: 1px solid #FDC50D;
-    margin:0 3rem;
+    margin: 0 3rem;
 }
 
-    
+
 /* --- Fin Footer --- */
 
 
@@ -624,19 +625,21 @@ input::file-selector-button {
 
 
 @media screen and (max-width : 1200px) {
-    
-    .img_form{
-        display:none;
+
+    .img_form {
+        display: none;
     }
-    
-    .formulaire_contact_part,.formulaire_contact_entr,.formulaire_contact_synd  {
-        padding-right : 0%;
-        margin : 2rem 0;
-}
+
+    .formulaire_contact_part,
+    .formulaire_contact_entr,
+    .formulaire_contact_synd {
+        padding-right: 0%;
+        margin: 2rem 0;
+    }
 
     #formulaire {
-        width : 100%;
-        margin-left : 0%;
+        width: 100%;
+        margin-left: 0%;
     }
 }
 
@@ -647,29 +650,33 @@ input::file-selector-button {
     }
 }
 
-@media screen and (max-width : 697px){
-    
-    .select_container h2{
-        font-size : 16px;
+@media screen and (max-width : 697px) {
+
+    .select_container h2 {
+        font-size: 16px;
     }
-    
-}    
-@media screen and (max-width : 600px){
+
+}
+
+@media screen and (max-width : 600px) {
     .text_form {
         width: 90%;
     }
 }
-@media screen and (max-width : 530px){
-    .formulaire_container{
-        width : 80%;
+
+@media screen and (max-width : 530px) {
+    .formulaire_container {
+        width: 80%;
     }
 }
-@media screen and (max-width : 462px){
-    
-    .select_container h2{
-        font-size : 12px;
+
+@media screen and (max-width : 462px) {
+
+    .select_container h2 {
+        font-size: 12px;
     }
-    .formulaire_container{
-        width : 90%;
+
+    .formulaire_container {
+        width: 90%;
     }
 }

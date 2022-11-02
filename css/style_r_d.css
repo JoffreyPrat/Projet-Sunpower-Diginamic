@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: "Quicksand";
-    src: url("/font/Quicksand-Regular.ttf") format("truetype"),
-         url("/font/Quicksand-Bold.ttf") format("truetype"),
-         url("/font/Quicksand-Light.ttf") format("truetype");
+    src: url("../font/Quicksand-Regular.ttf") format("truetype"),
+        url("../font/Quicksand-Bold.ttf") format("truetype"),
+        url("../font/Quicksand-Light.ttf") format("truetype");
 }
 
 
@@ -18,22 +18,10 @@ body h1 {
     color: #0C9B18;
     font-family: "Quicksand";
     font-weight: bold;
-    max-width : 100%;
-    height : auto;
+    max-width: 100%;
+    height: auto;
 }
 
-/* --- media titre et supr du text logo --- */
-
-@media screen and (max-width : 450px) {
-    
-    h1{
-        display : none
-    }
-
-    .titre_2{
-        font-size: 20px ;
-    }
-}
 
 /* --- fin media titre et supr du text logo --- */
 
@@ -65,7 +53,7 @@ body p {
     font-family: "Quicksand";
 }
 
-body a{
+body a {
     text-decoration: none;
     font-size: 7px;
     font-weight: bold;
@@ -84,28 +72,254 @@ body a{
 
 /* --- Logo --- */
 
-    .menu_logo {
-        display: flex;
-        align-items: center;
-      
-       
+.menu_logo {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.menu img {
+    width: 10%;
+    margin: 5px 10px 5px 10px;
+
+}
+
+
+.menu h1 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+/* --- Fin Header --- */
+
+/* --- Début main --- */
+
+.banniere {
+    width: 100%;
+}
+
+.banniere img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titre_2 {
+    text-align: center;
+    margin: 1rem;
+    margin-bottom: 2%;
+}
+
+.titre_3 {
+    text-align: center;
+    margin: 2rem;
+    font-weight: 900;
+}
+
+.titre_r_d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ligne {
+    border-bottom: 1px solid #6ACC1A;
+    margin: auto;
+    width: 20%;
+}
+
+
+/* --- section carte --- */
+
+.carte {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 3%;
+}
+
+.titre_carte_bms {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.titre_carte_elec {
+    text-align: start;
+    margin-bottom: 3%;
+}
+
+.titre_carte_embarque {
+    text-align: end;
+    margin-bottom: 3%;
+}
+
+.carte img {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.carte_elec {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.carte_elec p {
+    text-align: left;
+}
+
+.carte_bms {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-right: 1px solid #6ACC1A;
+    border-left: 1px solid #6ACC1A;
+    padding: 0% 2.5%;
+}
+
+.carte_bms p {
+    text-align: center;
+}
+
+.carte_embarque {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carte_embarque p {
+    text-align: end;
+}
+
+.p_carte {
+    text-align: start;
+    display: flex;
+    font-size: small;
+    min-height: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* --- fin section carte --- */
+
+
+/* --- dernière partie du main */
+
+.projet_psa {
+    display: flex;
+}
+
+.text_psa {
+    flex-direction: column;
+    margin: auto;
+}
+
+.text_psa p {
+    padding-top: 2%;
+}
+
+.projet_psa img {
+    width: 15%;
+    margin: 5% 2%;
+}
+
+
+/* --- fin dernière partie du main */
+
+
+/* --- Fin main --- */
+
+/* --- Début Footer --- */
+
+.footer {
+    background-color: #757575;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* --- Réseaux sociaux --- */
+.footer_suivre {
+    display: flex;
+    align-items: center;
+    margin: 1em 3em 0 3em;
+
+}
+
+.footer_suivre2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+.footer_contact {
+    text-align: right;
+}
+
+.footer_fin {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer_fin {
+    color: #ffffff;
+}
+
+.footer img {
+    width: auto;
+    height: 25px;
+}
+
+
+.mention_fin {
+    border-top: 1px solid #FDC50D;
+    margin: 0 3rem;
+}
+
+
+/* --- Fin Footer --- */
+
+/* Medias */
+
+/* --- media titre et supr du text logo --- */
+
+@media screen and (max-width : 450px) {
+
+    h1 {
+        display: none
     }
 
-    .menu img {
-        width: 10%;
-        margin: 5px 10px 5px 10px;
-
+    .titre_2 {
+        font-size: 20px;
     }
-    
-
-    .menu h1 {
-        text-align: left;
-        margin-left: 50px;
-    }
+}
 
 /* --- nav bar --- */
-   
-@media (min-width: 1150px){
+
+@media (min-width: 1150px) {
 
     #closeBtn {
         display: none;
@@ -113,9 +327,9 @@ body a{
 
     .menu ul {
         display: flex;
-        text-align: center;  
+        text-align: center;
         align-items: center;
-        margin : auto; 
+        margin: auto;
     }
 
     .menu li {
@@ -123,7 +337,7 @@ body a{
         align-items: center;
         justify-content: center;
     }
-    
+
     .border_right_navbar {
         border-right: 1px solid #FDC50D;
     }
@@ -131,7 +345,7 @@ body a{
     .border_left_navbar {
         border-left: 1px solid #FDC50D;
     }
-    
+
     .menu a {
         font-size: 23px;
         color: #000000;
@@ -146,7 +360,7 @@ body a{
         color: #107207;
     }
 
-    #r_d{
+    #r_d {
         color: #107207;
     }
 
@@ -156,10 +370,10 @@ body a{
         margin-top: 2%;
     }
 
-    .footer img:hover{
-        height : 40px;
+    .footer img:hover {
+        height: 40px;
     }
-    
+
 }
 
 /* --- burger menu --- */
@@ -169,7 +383,7 @@ body a{
         font-size: 100px;
         height: 100%;
         width: 250px;
-        position:fixed;
+        position: fixed;
         z-index: 1;
         top: 0;
         right: -250px;
@@ -209,20 +423,20 @@ body a{
         text-shadow: 0 0 1.5px #818181;
         transition: 0.2s;
     }
-    
+
     .sidenav.active {
         right: 0;
     }
-    
+
     /* bouton qui ferme */
-    
+
     .sidenav .close {
         position: absolute;
         top: 0;
         right: 25px;
         font-size: 36px;
     }
-    
+
     .burger-icon span {
         display: block;
         width: 35px;
@@ -232,129 +446,37 @@ body a{
         margin: 6px 0;
     }
 }
+
 /* ---  fin burger menu --- */
+/* Lignes de séparation */
 
-/* --- Fin Header --- */
-
-/* --- Début main --- */
-
-.banniere {
-    width: 100%;
-}
-
-    .banniere img {
-        max-width: 100%; 
-        height : auto;
+@media screen and (max-width : 1300px) {
+    .ligne {
+        width: 30%;
     }
-
-.titre_2 {
-    text-align: center;
-    margin: 1rem;
-    margin-bottom: 2%;
 }
 
-.titre_3 {
-    text-align: center;
-    margin: 2rem;
-    font-weight: 900;
-}
-
-.titre_r_d {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section_carte_ligne{
-    border-bottom: 1px solid #6ACC1A;
-    margin: auto;
-    width: 20%;   
-}
-
-
-/* --- section carte --- */
-
-.carte {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 90%;
-    margin-bottom: 3%;
-}
-
-.titre_carte_bms {
-    text-align: center;
-    margin-bottom: 3%;
-}
-
-.titre_carte_elec {
-    text-align: start;
-    margin-bottom: 3%;
-}
-
-.titre_carte_embarque {
-    text-align: end;
-    margin-bottom: 3%;
-}
-
-.carte img{
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-
-.carte_elec {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-}
-
-    .carte_elec p {
-        text-align: left;
+@media screen and (max-width : 847px) {
+    .ligne {
+        width: 40%;
     }
-
-.carte_bms {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    border-right: 1px solid #6ACC1A;
-    border-left: 1px solid #6ACC1A;
-    padding: 0% 2.5%;
 }
 
-    .carte_bms p {
-        text-align: center;
+@media screen and (max-width : 540px) {
+    .ligne {
+        width: 50%;
     }
-
-.carte_embarque {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: center;
 }
 
-    .carte_embarque p {
-       text-align: end;
-    }   
-
-.p_carte{
-    text-align: start;
-    display: flex;
-    font-size: small;
-    min-height: 100px;
-    justify-content: space-between;
-    flex-direction: column;
+@media screen and (max-width : 400px) {
+    .ligne {
+        width: 60%;
+    }
 }
-
-/* --- fin section carte --- */
 
 /* --- Média des cartes --- */
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
     .carte {
         display: flex;
@@ -395,29 +517,6 @@ body a{
 
 /* --- Fin média des cartes */
 
-/* --- dernière partie du main */
-
-.projet_psa {
-    display: flex;
-}
-
-.text_psa {
-    flex-direction: column;
-    margin: auto;
-}
-
-    .text_psa p{
-        padding-top: 2%;
-    }
-
-    .projet_psa img {
-        width: 15%;
-        margin: 5% 2%;
-    }
-
-
-/* --- fin dernière partie du main */
-
 /* --- media psa --- */
 
 @media (max-width: 800px) {
@@ -438,71 +537,3 @@ body a{
 }
 
 /* --- fin media psa --- */
-
-/* --- Fin main --- */
-
-/* --- Début Footer --- */
-
-.footer{
-    background-color: #757575;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-/* --- Réseaux sociaux --- */
-.footer_suivre  {
-    display: flex;
-    align-items : center;
-    margin : 1em 3em 0 3em;
-
-}
-
-.footer_suivre2  {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 1%;
-}
-
-.footer_contact  {
-    text-align : right;
-}
-
-.footer_fin {
-    text-align: center;
-    margin-top: 1em;
-    font-size: 12px;    
-    font-family: "Quicksand";
-}
- 
-    .footer a {
-        color: #ffffff;
-        text-decoration: none; 
-        margin-left : 15px;
-        font-size: 12px;
-        font-family: "Quicksand";    
-    }
-
-    .footer p {
-        color: #ffffff;
-    }
-
-.footer_fin {
-    color: #ffffff;
-}
-    
-    .footer img{
-        width : auto;
-        height : 25px;
-    }
-
-
-.mention_fin {
-    border-top: 1px solid #FDC50D;
-    margin:0 3rem;
-}
-
-    
-/* --- Fin Footer --- */
- 

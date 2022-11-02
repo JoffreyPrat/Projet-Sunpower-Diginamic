@@ -1,11 +1,10 @@
-
 /* --- Font --- */
 
 @font-face {
     font-family: "Quicksand";
-    src: url("/font/Quicksand-Regular.ttf") format("truetype"),
-         url("/font/Quicksand-Bold.ttf") format("truetype"),
-         url("/font/Quicksand-Light.ttf") format("truetype");
+    src: url("../font/Quicksand-Regular.ttf") format("truetype"),
+        url("../font/Quicksand-Bold.ttf") format("truetype"),
+        url("../font/Quicksand-Light.ttf") format("truetype");
 }
 
 
@@ -19,9 +18,9 @@ body h1 {
     color: #0C9B18;
     font-family: "Quicksand";
     font-weight: bold;
-    max-width : 100%;
-    height : auto;
-    
+    max-width: 100%;
+    height: auto;
+
 }
 
 body h2 {
@@ -52,7 +51,7 @@ body p {
     font-family: "Quicksand";
 }
 
-body a{
+body a {
     text-decoration: none;
     font-size: 7px;
     font-weight: bold;
@@ -71,28 +70,28 @@ body a{
 
 /* --- Logo --- */
 
-    .menu_logo {
-        display: flex;
-        align-items: center;
-      
-       
-    }
+.menu_logo {
+    display: flex;
+    align-items: center;
 
-    .menu img {
-        width: 10%;
-        margin: 5px 10px 5px 10px;
 
-    }
-    
+}
 
-    .menu h1 {
-        text-align: left;
-        margin-left: 50px;
-    }
+.menu img {
+    width: 10%;
+    margin: 5px 10px 5px 10px;
+
+}
+
+
+.menu h1 {
+    text-align: left;
+    margin-left: 50px;
+}
 
 /* --- nav bar --- */
-   
-@media (min-width: 1150px){
+
+@media (min-width: 1150px) {
 
     #closeBtn {
         display: none;
@@ -100,9 +99,9 @@ body a{
 
     .menu ul {
         display: flex;
-        text-align: center;  
+        text-align: center;
         align-items: center;
-        margin : auto; 
+        margin: auto;
     }
 
     .menu li {
@@ -110,7 +109,7 @@ body a{
         align-items: center;
         justify-content: center;
     }
-    
+
     .border_right_navbar {
         border-right: 1px solid #FDC50D;
     }
@@ -118,7 +117,7 @@ body a{
     .border_left_navbar {
         border-left: 1px solid #FDC50D;
     }
-    
+
     .menu a {
         font-size: 23px;
         color: #000000;
@@ -133,7 +132,7 @@ body a{
         color: #107207;
     }
 
-    #activite{
+    #activite {
         color: #107207;
     }
 
@@ -143,10 +142,10 @@ body a{
         margin-top: 2%;
     }
 
-    .footer img:hover{
-        height : 40px;
+    .footer img:hover {
+        height: 40px;
     }
-    
+
 }
 
 /* --- burger menu --- */
@@ -156,7 +155,7 @@ body a{
         font-size: 100px;
         height: 100%;
         width: 250px;
-        position:fixed;
+        position: fixed;
         z-index: 1;
         top: 0;
         right: -250px;
@@ -180,7 +179,7 @@ body a{
         padding: 0;
         opacity: 1;
     }
-    
+
     .sidenav a {
         padding: 10px 10px 10px 1px;
         text-decoration: none;
@@ -196,20 +195,20 @@ body a{
         text-shadow: 0 0 1.5px #818181;
         transition: 0.2s;
     }
-    
+
     .sidenav.active {
         right: 0;
     }
-    
+
     /* bouton qui ferme */
-    
+
     .sidenav .close {
         position: absolute;
         top: 0;
         right: 25px;
         font-size: 36px;
     }
-    
+
     .burger-icon span {
         display: block;
         width: 35px;
@@ -219,6 +218,7 @@ body a{
         margin: 6px 0;
     }
 }
+
 /* ---  fin burger menu --- */
 
 /* --- Fin Header --- */
@@ -231,8 +231,8 @@ body a{
     width: 100%;
 }
 
-.banniere_activite img{
-    max-width: 100%; 
+.banniere_activite img {
+    max-width: 100%;
 }
 
 /* --- fin banniere --- */
@@ -244,34 +244,36 @@ body a{
     margin: 2rem;
 }
 
-.titre_ligne{
+.titre_ligne {
     border-bottom: 1px solid #6ACC1A;
     margin: auto;
-    width: 30%;           
+    width: 30%;
 }
+
 /* --- fin titre page  --- */
 
 /* --- Début section produit --- */
 
-.section_produit{
+.section_produit {
     display: flex;
     align-items: center;
     margin: auto;
-    width : 95%;
+    width: 95%;
     margin-top: 2rem;
 }
 
-    .section_produit img{
-        width : 18%;
-    }
+.section_produit img {
+    width: 18%;
+}
 
-    .section_produit_texte{
-        margin-left: 1rem;
-    }
+.section_produit_texte {
+    margin-left: 1rem;
+}
 
-        .section_produit_texte p{
-            margin: 1rem 0 ;
-        }
+.section_produit_texte p {
+    margin: 1rem 0;
+}
+
 /* --- fin section produit --- */
 
 /* --- Début section Montpellier --- */
@@ -283,11 +285,12 @@ body a{
     margin: 2rem;
 }
 
-.section_mtp_ligne{
+.section_mtp_ligne {
     border-bottom: 1px solid #6ACC1A;
     margin: auto;
-    width: 30%;           
+    width: 30%;
 }
+
 /* --- Fin Titre Montpellier --- */
 
 /* Début section Contenu Montpellier */
@@ -306,7 +309,7 @@ body a{
 
 /* --- Début Footer --- */
 
-.footer{
+.footer {
     background-color: #757575;
     display: flex;
     flex-direction: column;
@@ -314,60 +317,60 @@ body a{
 }
 
 /* --- Réseaux sociaux --- */
-.footer_suivre  {
+.footer_suivre {
     display: flex;
-    align-items : center;
-    margin : 1em 3em 0 3em;
+    align-items: center;
+    margin: 1em 3em 0 3em;
 
 }
 
-.footer_suivre2  {
+.footer_suivre2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 1%;
 }
 
-.footer_contact  {
-    
-    text-align : right;
+.footer_contact {
+
+    text-align: right;
 }
 
-.footer_fin{
+.footer_fin {
     text-align: center;
     margin-top: 1em;
-    font-size: 12px;    
+    font-size: 12px;
     font-family: "Quicksand";
 }
- 
-    .footer a {
-        color: #ffffff;
-        text-decoration: none; 
-        margin-left : 15px;
-        font-size: 12px;
-        font-family: "Quicksand";    
-    }
 
-    .footer p {
-        color: #ffffff;
-    }
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: "Quicksand";
+}
 
-    .footer_fin {
-        color: #ffffff;
-    }
-    
-.footer img{
-    width : auto;
-    height : 25px;
+.footer p {
+    color: #ffffff;
+}
+
+.footer_fin {
+    color: #ffffff;
+}
+
+.footer img {
+    width: auto;
+    height: 25px;
 }
 
 
 .mention_fin {
     border-top: 1px solid #FDC50D;
-    margin:0 3rem;
+    margin: 0 3rem;
 }
 
-    
+
 /* --- Fin Footer --- */
 
 
@@ -376,9 +379,9 @@ body a{
 
 
 @media screen and (max-width : 450px) {
-    
-    h1{
-        display : none
+
+    h1 {
+        display: none
     }
-    
-    }   
+
+}
